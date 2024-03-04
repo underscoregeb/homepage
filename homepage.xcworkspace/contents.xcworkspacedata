@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:base.css">
+   </FileRef>
+   <Group
+      location = "group:catfeed"
+      name = "catfeed">
+      <FileRef
+         location = "group:index.html">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:homepage.xcworkspace">
+   </FileRef>
+   <FileRef
+      location = "group:index.html">
+   </FileRef>
+   <Group
+      location = "group:now"
+      name = "now">
+      <FileRef
+         location = "group:index.html">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:owo"
+      name = "owo">
+      <FileRef
+         location = "group:index.html">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <FileRef
+      location = "group:template.html">
+   </FileRef>
+</Workspace>

@@ -18,11 +18,30 @@
 
     gtag('config', 'G-Q132HBB52R');
   </script>
-  <SCRIPT LANGUAGE=”JavaScript”>
-    fetch('https://api.ipify.org?format=json')
-      .then(response => response.json())
-      .then(data => console.log(data.ip));
-    </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $.getJSON("https://api.ipify.org?format=json", function (data) {
+        var clientIP = data.ip;
+        console.log("Client IP Address:", clientIP);
+        // You can send this IP address to your server for logging
+        // Example AJAX request to log the IP address
+        /*
+        $.ajax({
+            type: "POST",
+            url: "log_ip.php", // Replace with your server-side script URL
+            data: {ip: clientIP},
+            success: function(response) {
+                console.log("IP logged successfully:", response);
+            },
+            error: function(xhr, status, error) {
+                console.error("Error logging IP:", error);
+            }
+        });
+        */
+      });
+    });
+  </script>
 </head>
 
 <body>

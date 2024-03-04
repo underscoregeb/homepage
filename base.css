@@ -1,0 +1,180 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1.2em;
+	margin: 0;
+	padding: 2em;
+	height: 100%;
+	background: #f8f8fa;
+}
+
+#content-box,
+#photostreamheader,
+footer {
+	display: block;
+	max-width: 30em;
+	border-radius: 0em;
+	margin: 0 auto;
+	text-align: center;
+	padding: 2em;
+	color: #000;
+	border: 1px solid #000;
+}
+
+footer,
+#photostreamheader {
+	padding: 0em;
+}
+
+#photostreamheader {
+	border: unset;
+}
+
+
+#pronouns {
+	margin: 0 0 1em 0;
+	color: #666;
+}
+
+#pronouns a:link,
+#pronouns a:visited,
+#pronouns a:hover,
+#pronouns a:active {
+	color: #666;
+}
+
+
+#profile-items :is(h1, h2, h3, h4, h5, h6) {
+	text-align: left;
+	margin-block-start: 2em;
+	margin-block-end: .75em;
+}
+
+
+
+
+#bio {
+	text-align: center;
+	font-size: 110%;
+	line-height: 140%;
+}
+
+ul {
+	margin-block-start: unset;
+	margin-block-end: unset;
+	text-align: left;
+	padding-inline-start: unset;
+	columns: 10em;
+}
+
+li {
+	line-height: 150%;
+	text-align: justify;
+	display: inline;
+	text-transform: lowercase;
+}
+
+
+ul a:link,
+ul a:visited {
+	color: #000;
+	text-decoration-color: #000;
+	text-decoration: none;
+	border-bottom: 1px dotted #000;
+}
+
+ul a:hover,
+ul a:active {
+	color: #000;
+	text-decoration-color: #000;
+	text-decoration: none;
+	border-bottom: 2px solid #000;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background: #333;
+	margin: 1.5em 0;
+}
+
+@media (max-width: 500px) {
+	body {
+		font-size: 1em;
+		padding: 1em;
+	}
+
+	main {
+		padding: 1.5em;
+	}
+}
+
+/* theme embeds */
+#embedzone iframe {
+	border: 1px solid #000 !important;
+	border-radius: 0em;
+}
+
+/* photo stream */
+#photostreamheader {
+	text-align: left;
+	padding-left: 1.5em;
+}
+
+#photostreamheader em {
+	padding-inline: 1.5em;
+	color: #666;
+	opacity: 0%;
+}
+
+#photostreamheader em:hover {
+	padding-left: 1.5em;
+	opacity: 50% !important;
+}
+
+
+.photo-stream {
+	background-color: unset;
+	overflow: auto;
+	white-space: nowrap;
+	padding: 0em;
+	margin-bottom: 1em;
+}
+
+.photo-stream img {
+	padding: 0em;
+	object-position: center;
+	height: 20em;
+	width: 15em;
+}
+
+.photo-stream::-webkit-scrollbar {
+	-webkit-appearance: none;
+}
+
+.photo-stream::-webkit-scrollbar:vertical {
+	width: 11px;
+}
+
+.photo-stream::-webkit-scrollbar:horizontal {
+	height: 11px;
+}
+
+.photo-stream::-webkit-scrollbar-thumb {
+	border-radius: 0px;
+	border: 2px;
+	/* should match background, can't be transparent */
+	background-color: rgb(0, 0, 0);
+}
+
+footer {
+	margin-top: 1em;
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	align-items: center;
+	padding-inline: 2em;
+}

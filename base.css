@@ -46,7 +46,7 @@ footer,
 }
 
 
-#profile-items :is(h1, h2, h3, h4, h5, h6) {
+#content-stuff :is(p, h1, h2, h3, h4, h5, h6) {
 	text-align: left;
 	margin-block-start: 2em;
 	margin-block-end: .75em;

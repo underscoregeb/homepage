@@ -8,6 +8,7 @@
   <meta property="og:description" content="hi there owo">
   <meta name="viewport" content="width=device-width">
   <link href="./base.css" rel="stylesheet">
+  <link href="./home.css" rel="stylesheet">
   <!--proven.lol: proven70ae53 -->
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q132HBB52R"></script>
@@ -19,18 +20,17 @@
     gtag('config', 'G-Q132HBB52R');
   </script>
 </head>
-
 <body>
   <main>
     <div id="content-box">
-      <div id="motd">
+      <div id="block_motd">
         <img src="https://cdn.some.pics/geb/65dec1ba6b1f7.png" width="200px" height=auto>
       </div>
-      <div id="intro">
-        <h1 id="name">
+      <div id="block_intro">
+        <h1 id="title">
           geb
         </h1>
-        <div class="metadata" id="pronouns">
+        <div id="pronouns">
           any/all - utc-6
         </div>
         <div id="bio">
@@ -39,7 +39,13 @@
           </p>
         </div>
       </div>
-      <div id="content-stuff">
+      <div id="block_stuff">
+        <h3>
+          connections
+        </h3>
+        <ul class="link-out">
+          <li><a rel="me" href="./lists">link</a></li>
+        </ul>
         <h3>
           connections
         </h3>
@@ -109,6 +115,7 @@
             <li><a rel="me" href="https://songwhip.com/twenty-one-pilots">twenty one pilots</a></li>
             <li><a rel="me" href="https://songwhip.com/mgmt">MGMT</a></li>
           </div>
+          <br>
           <div>
             <li><a rel="me" href="https://www.halfasleep.games/melatonin/">Melatonin</a></li>
             <li><a rel="me" href="https://minecraft.net">Minecraft</a></li>
@@ -153,19 +160,20 @@
         </ul>
       </div>
       <br>
-      <div id="embedzone">
+      <div id="block_embed">
         <iframe id="embedPlayer"
           src="https://embed.music.apple.com/us/album/oracular-spectacular/264720008?app=music&amp;itsct=music_box_player&amp;itscg=30200&amp;ls=1&amp;theme=light"
           height="452px" frameborder="0"
           sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
           allow="autoplay *; encrypted-media *; clipboard-write"
           style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 0px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: transparent"></iframe>
-        <caption>on now ^</caption>
       </div>
+      <p class="invert-cap">now playing</p>
     </div>
     <div>
       <div id="photostreamheader">
-        <h3>photo stream <em>[shift] to scroll sideways</em></h3>
+        <h3>photo stream</h3>
+        <h3><a rel="me" href="/photostream">more</a></h3>
       </div>
       <div class="photo-stream">
         <img src="https://cdn.some.pics/geb/65caaa812d764.jpg">
@@ -174,12 +182,11 @@
       </div>
     </div>
     <div id="content-box">
-      <div id="embedzone">
+      <div id="block_embed">
         <iframe src="https://witeboard.com/fe207a50-d52d-11ee-ba25-b13645637346" frameborder="0" height="450"
           style="width:100%; max-width:660px; overflow:hidden; background:inherit;"></iframe>
-        <caption>draw something!</caption>
       </div>
-      smh
+      <p class="invert-cap">draw something!</p>
     </div>
   </main>
   <footer>

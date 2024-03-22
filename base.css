@@ -2,16 +2,19 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--fore: #000;
+	--back: #f8f8fa;
+}
+
 body {
 	font-size: 1.2em;
 	margin: 0;
-	padding: 2em;
 	height: 100%;
-	background: #f8f8fa;
+	background: var(--back);
 }
 
 #content-box,
-#photostreamheader,
 footer {
 	display: block;
 	max-width: 30em;
@@ -19,34 +22,19 @@ footer {
 	margin: 0 auto;
 	text-align: center;
 	padding: 2em;
-	color: #000;
-	border: 1px solid #000;
+	color: var(--fore);
+	border: 1px solid var(--fore);
 }
 
-footer,
-#photostreamheader {
+footer {
 	padding: 0em;
 }
 
-#photostreamheader {
-	border: unset;
-}
 
 
-#pronouns {
-	margin: 0 0 1em 0;
-	color: #666;
-}
-
-#pronouns a:link,
-#pronouns a:visited,
-#pronouns a:hover,
-#pronouns a:active {
-	color: #666;
-}
 
 
-#content-stuff :is(p, h1, h2, h3, h4, h5, h6) {
+#block_stuff {
 	text-align: left;
 	margin-block-start: 2em;
 	margin-block-end: .75em;
@@ -77,16 +65,16 @@ li {
 }
 
 
-ul a:link,
-ul a:visited {
+a:link,
+a:visited {
 	color: #000;
 	text-decoration-color: #000;
 	text-decoration: none;
 	border-bottom: 1px dotted #000;
 }
 
-ul a:hover,
-ul a:active {
+a:hover,
+a:active {
 	color: #000;
 	text-decoration-color: #000;
 	text-decoration: none;
@@ -111,63 +99,6 @@ hr {
 	}
 }
 
-/* theme embeds */
-#embedzone iframe {
-	border: 1px solid #000 !important;
-	border-radius: 0em;
-}
-
-/* photo stream */
-#photostreamheader {
-	text-align: left;
-	padding-left: 1.5em;
-}
-
-#photostreamheader em {
-	padding-inline: 1.5em;
-	color: #666;
-	opacity: 0%;
-}
-
-#photostreamheader em:hover {
-	padding-left: 1.5em;
-	opacity: 50% !important;
-}
-
-
-.photo-stream {
-	background-color: unset;
-	overflow: auto;
-	white-space: nowrap;
-	padding: 0em;
-	margin-bottom: 1em;
-}
-
-.photo-stream img {
-	padding: 0em;
-	object-position: center;
-	height: 20em;
-	width: 15em;
-}
-
-.photo-stream::-webkit-scrollbar {
-	-webkit-appearance: none;
-}
-
-.photo-stream::-webkit-scrollbar:vertical {
-	width: 11px;
-}
-
-.photo-stream::-webkit-scrollbar:horizontal {
-	height: 11px;
-}
-
-.photo-stream::-webkit-scrollbar-thumb {
-	border-radius: 0px;
-	border: 2px;
-	/* should match background, can't be transparent */
-	background-color: rgb(0, 0, 0);
-}
 
 footer {
 	margin-top: 1em;
@@ -177,4 +108,11 @@ footer {
 	-webkit-box-align: center;
 	align-items: center;
 	padding-inline: 2em;
+}
+
+.invert-cap {
+	display: inline-flex;
+	background-color: var(--fore);
+	color: var(--back);
+	padding: 2px;
 }

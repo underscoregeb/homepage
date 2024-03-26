@@ -5,6 +5,11 @@
 	color: #666;
 }
 
+.link-out h4 {
+	opacity: .3;
+	margin-block-end: 1em;
+}
+
 /* theme embeds */
 #block_embed iframe {
 	border: 1px solid #000 !important;

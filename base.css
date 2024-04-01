@@ -12,6 +12,7 @@ body {
 	margin: 0;
 	height: 100%;
 	background: var(--back);
+	padding-inline: 1em;
 }
 
 #content-box,
@@ -19,19 +20,12 @@ footer {
 	display: block;
 	max-width: 30em;
 	border-radius: 0em;
-	margin: 0 auto;
+	margin: 1em auto;
 	text-align: center;
 	padding: 2em;
 	color: var(--fore);
 	border: 1px solid var(--fore);
 }
-
-footer {
-	padding: 0em;
-}
-
-
-
 
 
 #block_stuff {
@@ -88,26 +82,20 @@ hr {
 	margin: 1.5em 0;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
 	body {
 		font-size: 1em;
-		padding: 1em;
-	}
-
-	main {
-		padding: 1.5em;
 	}
 }
 
 
 footer {
-	margin-top: 1em;
 	display: flex;
 	-webkit-box-pack: justify;
 	justify-content: space-between;
 	-webkit-box-align: center;
 	align-items: center;
-	padding-inline: 2em;
+	padding: 1em 2em;
 }
 
 .invert-cap {

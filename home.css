@@ -16,16 +16,9 @@
 	border-radius: 0em;
 }
 
-/* photo stream */
-#photostreamheader {
-	display: flex;
-	-webkit-box-pack: justify;
-	justify-content: space-between;
-	-webkit-box-align: center;
-	align-items: center;
-	padding-inline: 2em;
 
-}
+
+
 
 .photo-stream {
 	background-color: unset;
@@ -37,7 +30,7 @@
 
 .photo-stream img {
 	padding: 0em;
-	object-position: center;
+	object-fit: cover;
 	height: 20em;
 	width: 15em;
 }

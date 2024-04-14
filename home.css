@@ -1,14 +1,146 @@
+@font-face {
+	font-family: 'SFpro';
+	src: url('assets/SF-Pro.ttf') format('truetype');
+}
 
+#title {
+	font-family: SFpro;
+}
 
 #pronouns {
-	margin: 0 0 1em 0;
 	color: #666;
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: center;
+	-webkit-box-align: center;
+	align-items: center;
 }
+#pronouns p {
+	margin: 0 4px;
+}
+
+#select:hover {
+	background-color: #B1D4FD;
+}
+
+#pride {
+	cursor: default;
+}
+#pride:hover {
+  background: linear-gradient(to right, 
+  rgb(255, 242, 0),
+  rgb(132, 0, 255) , 
+  rgb(255, 242, 0)
+  );
+  background-size: 600%;
+  animation: rainbowCycle 1s linear infinite;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+@keyframes rainbowCycle {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+#rotate::after {
+	content: "utc-6";
+}
+#rotate:hover::after {
+animation: count .5s linear infinite;
+}
+
+@keyframes count {
+	5% {
+		content: "utc-12";
+	}
+	10% {
+		content: "utc-11";
+	}
+	15% {
+		content: "utc-10";
+	}
+	20% {
+		content: "utc-9";
+	}
+	25% {
+		content: "utc-8";
+	}
+	30% {
+		content: "utc-7";
+	}
+	35% {
+		content: "utc-6";
+	}
+	40% {
+		content: "utc-5";
+	}
+	45% {
+		content: "utc-4";
+	}
+	50% {
+		content: "utc-3";
+	}
+	55% {
+		content: "utc-2";
+	}
+	60% {
+		content: "utc-1";
+	}
+	65% {
+		content: "utc+0";
+	}
+	70% {
+		content: "utc+1";
+	}
+	75% {
+		content: "utc+2";
+	}
+	80% {
+		content: "utc+3";
+	}
+	85% {
+		content: "utc+4";
+	}
+	90% {
+		content: "utc+5";
+	}
+	95% {
+		content: "utc+6";
+	}
+	100% {
+		content: "utc+7";
+	}
+  }
 
 .link-out h4 {
 	opacity: .3;
-	margin-block-end: 1em;
 }
+
+ul {
+	margin-block-start: unset;
+	margin-block-end: unset;
+	text-align: left;
+	padding-inline-start: unset;
+	columns: 10em;
+}
+
+li {
+	line-height: 150%;
+	text-align: justify;
+	display: inline-flex;
+	text-transform: lowercase;
+}
+
+
 
 /* theme embeds */
 #block_embed iframe {

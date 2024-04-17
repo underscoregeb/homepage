@@ -7,6 +7,18 @@
 	--back: #f8f8fa;
 }
 
+@font-face {
+	font-family: 'SFpro';
+	src: url('assets/SF-Pro.ttf') format('truetype');
+	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: SFpro;
+	font-variation-settings: "wdth" 120;
+	margin-bottom: .5em;
+}
+
 body {
 	font-size: 1.2em;
 	margin: 0;
@@ -15,8 +27,7 @@ body {
 	padding-inline: 1em;
 }
 
-#content-box,
-footer {
+#content-box {
 	display: block;
 	max-width: 30em;
 	border-radius: 0em;
@@ -73,20 +84,6 @@ hr {
 	}
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: SFpro;
-	margin-bottom: .5em;
-}
-
-
-footer div {
-	display: flex;
-	-webkit-box-pack: justify;
-	justify-content: space-between;
-	-webkit-box-align: center;
-	align-items: center;
-	padding: 1em 2em;
-}
 
 .invert-cap {
 	display: inline-flex;

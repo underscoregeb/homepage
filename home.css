@@ -148,8 +148,15 @@ li {
 }
 
 
+.reveal:hover span {
+	opacity: 0.3;
+}
 
-
+.reveal span {
+	font-size: small;
+	opacity: 0;
+	transition: 0.3s;
+}
 
 .photo-stream {
 	background-color: unset;

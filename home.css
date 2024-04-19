@@ -1,10 +1,11 @@
-
-
 #title {
 	font-family: SFpro;
 	font-variation-settings: "wdth" 150;
 
 }
+
+
+/* interactive pronouns */
 
 #pronouns {
 	color: #666;
@@ -15,7 +16,8 @@
 	align-items: center;
 }
 #pronouns p {
-	margin: 0 4px;
+	margin: 0 1ch;
+	display: inline-block; 
 }
 
 #select:hover {
@@ -46,79 +48,53 @@
     background-position: 50% 50%;
   }
   100% {
-    background-position: 100% 50%;
+	background-position: 100% 50%;
   }
+}
+
+#rotate {
+	text-align: left;
+	margin-right: 0 !important;
+	width: 5.5ch;
 }
 
 #rotate::after {
 	content: "utc-6";
 }
 #rotate:hover::after {
-animation: count .5s linear infinite;
+	animation: count 1s linear infinite;
 }
 
-@keyframes count {
-	5% {
-		content: "utc-12";
-	}
-	10% {
-		content: "utc-11";
-	}
-	15% {
-		content: "utc-10";
-	}
-	20% {
-		content: "utc-9";
-	}
-	25% {
-		content: "utc-8";
-	}
-	30% {
-		content: "utc-7";
-	}
-	35% {
-		content: "utc-6";
-	}
-	40% {
-		content: "utc-5";
-	}
-	45% {
-		content: "utc-4";
-	}
-	50% {
-		content: "utc-3";
-	}
-	55% {
-		content: "utc-2";
-	}
-	60% {
-		content: "utc-1";
-	}
-	65% {
-		content: "utc+0";
-	}
-	70% {
-		content: "utc+1";
-	}
-	75% {
-		content: "utc+2";
-	}
-	80% {
-		content: "utc+3";
-	}
-	85% {
-		content: "utc+4";
-	}
-	90% {
-		content: "utc+5";
-	}
-	95% {
-		content: "utc+6";
-	}
-	100% {
-		content: "utc+7";
-	}
+@keyframes count  {
+	0% { content: "utc-6"; }
+	4.16% { content: "utc-5"; } 
+	8.33% { content: "utc-4"; }
+	12.5% { content: "utc-3"; }
+	16.66% { content: "utc-2"; }
+	20.83% { content: "utc-1"; }
+	25% { content: "utc+0"; }
+	29.16% { content: "utc+1"; }
+	33.33% { content: "utc+2"; }
+	37.5% { content: "utc+3"; }
+	41.66% { content: "utc+4"; }
+	45.83% { content: "utc+5"; }
+	50% { content: "utc+6"; }
+	54.16% { content: "utc+7"; }
+	58.33% { content: "utc+8"; }
+	62.5% { content: "utc+9"; }
+	66.66% { content: "utc+10"; } 
+	70.83% { content: "utc+11"; }
+	75% { content: "utc+12"; }
+	79.16% { content: "utc-12"; }
+	83.33% { content: "utc-11"; }
+	87.5% { content: "utc-10"; }
+	91.66% { content: "utc-9"; }
+	95.83% { content: "utc-8"; }
+	100% { content: "utc-7"; }
   }
+
+
+/* link columns */
 
 .link-out h4 {
 	opacity: .3;
@@ -140,13 +116,14 @@ li {
 }
 
 
-
 /* theme embeds */
 #block_embed iframe {
 	border: 1px solid #000 !important;
 	border-radius: 0em;
 }
 
+
+/* desktop */
 
 .reveal:hover span {
 	opacity: 0.3;
@@ -157,6 +134,9 @@ li {
 	opacity: 0;
 	transition: 0.3s;
 }
+
+
+/* photo stream */
 
 .photo-stream {
 	background-color: unset;
